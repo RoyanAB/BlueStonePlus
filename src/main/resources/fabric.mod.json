@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "bluestoneplus",
+  "version": "${version}",
+  "name": "BluestonePlus",
+  "description": "blue!",
+  "authors": [
+    "AB"
+  ],
+  "contact": {
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/bluestoneplus/icon.png",
+  "environment": "*",
+  "entrypoints": {
+  },
+  "mixins": [
+    "bluestoneplus.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "1.12.2"
+  }
+}

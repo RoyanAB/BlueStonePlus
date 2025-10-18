@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cn.royan.bluestoneplus.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "RedstoneWireBlockMixin",
+    "RedstoneParticleMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
