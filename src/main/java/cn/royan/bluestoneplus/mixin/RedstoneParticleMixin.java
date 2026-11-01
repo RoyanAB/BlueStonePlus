@@ -1,5 +1,7 @@
 package cn.royan.bluestoneplus.mixin;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.entity.particle.Particle;
 import net.minecraft.client.entity.particle.RedstoneParticle;
 import net.minecraft.world.World;
@@ -10,6 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.awt.*;
 
+@Environment(EnvType.CLIENT)
 @Mixin(RedstoneParticle.class)
 public abstract class RedstoneParticleMixin extends Particle {
 	protected RedstoneParticleMixin(World world, double x, double y, double z) {
@@ -17,7 +20,7 @@ public abstract class RedstoneParticleMixin extends Particle {
 	}
 
 	@Inject(method = "<init>(Lnet/minecraft/world/World;DDDFFFF)V", at = @At("RETURN"))
-	public void blue(World world, double x, double y, double z, float scaleFactor, float r, float g, float b, CallbackInfo ci){
+	public void blue(World world, double x, double y, double z, float scaleFactor, float r, float g, float b, CallbackInfo ci) {
 		Color color = new Color(2, 230, 234);
 
 		this.red = ((color.getRGB() >> 16) & 0xFF) / 255.0f;
