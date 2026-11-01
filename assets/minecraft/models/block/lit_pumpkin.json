@@ -1,0 +1,19 @@
+{
+    "parent": "block/cube",
+    "display": {
+        "firstperson_righthand": {
+            "rotation": [ 0, 135, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.40, 0.40, 0.40 ]
+        }
+    },
+    "textures": {
+        "particle": "blocks/pumpkin_face_on",
+        "down": "block/jack_o_lantern_bottom",
+        "up": "block/jack_o_lantern_top",
+        "north": "blocks/pumpkin_face_on",
+        "east": "block/jack_o_lantern_side",
+        "south": "block/jack_o_lantern_back",
+        "west": "block/jack_o_lantern_side"
+    }
+}

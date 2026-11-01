@@ -1,0 +1,19 @@
+{
+    "parent": "block/cube",
+    "display": {
+        "firstperson_righthand": {
+            "rotation": [ 0, 135, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.40, 0.40, 0.40 ]
+        }
+    },
+    "textures": {
+        "particle": "blocks/pumpkin_face_off",
+        "down": "block/carved_pumpkin_bottom",
+        "up": "block/carved_pumpkin_top",
+        "north": "blocks/pumpkin_face_off",
+        "east": "block/carved_pumpkin_side",
+        "south": "block/carved_pumpkin_back",
+        "west": "block/carved_pumpkin_side"
+    }
+}

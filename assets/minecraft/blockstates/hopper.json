@@ -1,0 +1,49 @@
+{
+    "multipart": [
+        {   "when": { "facing": "down" },
+            "apply": { "model": "hopper" }
+        },
+        {   "when": { "facing": "north" },
+            "apply": { "model": "hopper_side" }
+        },
+        {   "when": { "facing": "south" },
+            "apply": { "model": "hopper_side", "y": 180 }
+        },
+        {   "when": { "facing": "east" },
+            "apply": { "model": "hopper_side", "y": 90 }
+        },
+        {   "when": { "facing": "west" },
+            "apply": { "model": "hopper_side", "y": 270 }
+        },
+        {   "when": { "facing": "down", "enabled": "true" },
+            "apply": { "model": "hopper" }
+        },
+        {   "when": { "facing": "north", "enabled": "true" },
+            "apply": { "model": "hopper_side" }
+        },
+        {   "when": { "facing": "south", "enabled": "true" },
+            "apply": { "model": "hopper_side", "y": 180 }
+        },
+        {   "when": { "facing": "east", "enabled": "true" },
+            "apply": { "model": "hopper_side", "y": 90 }
+        },
+        {   "when": { "facing": "west", "enabled": "true" },
+            "apply": { "model": "hopper_side", "y": 270 }
+        },
+        {   "when": { "facing": "down", "enabled": "false" },
+            "apply": { "model": "hopper_on" }
+        },
+        {   "when": { "facing": "north", "enabled": "false" },
+            "apply": { "model": "hopper_side_on" }
+        },
+        {   "when": { "facing": "south", "enabled": "false" },
+            "apply": { "model": "hopper_side_on", "y": 180 }
+        },
+        {   "when": { "facing": "east", "enabled": "false" },
+            "apply": { "model": "hopper_side_on", "y": 90 }
+        },
+        {   "when": { "facing": "west", "enabled": "false" },
+            "apply": { "model": "hopper_side_on", "y": 270 }
+        }
+    ]
+}
